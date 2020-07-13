@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Playback</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=8" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width" />
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
-	
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
-	<script type="text/javascript" src="record1.js"></script>
+    <title>Document</title>
 
-    <style>
-		body {
-			margin:0;
-			padding:0;
-			overflow: hidden;
-		}
-		canvas {
-			margin:auto;
-		}
-    </style>
+    <link rel="stylesheet" href="css/style-record.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/visualization.js"></script>
+  </head>
+
+  <body>
+    <button id="playSampleButton" type="button" onClick="playSample()">
+      Play Sample File
+    </button>
     
-</head>
-<body>
-    <h1>
-        This was executed
-    </h1>
-</body>
+    <span id="loading"></span>
+   
+    <div id="song_info_wrapper">
+      <div id="artist">Your</div>
+      <div id="title">Urban Sound</div>
+      <div id="album">Recording</div>
+    </div>
+  
+
+    <canvas id="freqBars" width="1024" height="525"></canvas>
+  </body>
 </html>
