@@ -128,13 +128,13 @@ function drawBars(array) {
 
   canvasContext.globalCompositeOperation = "source-over";
 
-  canvasContext.scale(0.3, 0.3);
+  canvasContext.scale(0.5, 0.5);
   canvasContext.translate(window.innerWidth, window.innerHeight);
   canvasContext.fillStyle = "#fff"; //light grey
 
   var bass = Math.floor(array[1]); //1 Hz Frequency
   var radius =
-    0.45 * $(window).width() <= 450
+    0.3 * $(window).width() <= 450
       ? -(bass * 0.25 + 0.45 * $(window).width())
       : -(bass * 0.25 + 450);
 
