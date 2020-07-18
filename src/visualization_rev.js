@@ -4,8 +4,6 @@ var rAFID = null;
 var analyser = null;
 var sourceNode;
 
-//var audioBuffer;
-
 var microphone = null;
 var hasSetupUserMedia = false;
 
@@ -68,7 +66,7 @@ function playSample() {
         // when the audio is decoded play the sound
         sourceNode.buffer = buffer;
         sourceNode.start(0);
-        $("#freqBars, body").addClass("animateHue");
+        $("#viewAudio, body").addClass("animateHue");
         //on error
       },
       function (err) {
@@ -194,7 +192,7 @@ function drawBars(array) {
 function initBinCanvas() {
   //adding new canvas
   "use strict";
-  canvas = document.getElementById("freqBars");
+  canvas = document.getElementById("viewAudio");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
