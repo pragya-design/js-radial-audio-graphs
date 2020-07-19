@@ -15,23 +15,21 @@
     />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="src/audio.js"></script>
     <script src="src/visualization.js"></script>
+    <script src="src/canvas.js"></script>
+    <script src="src/setup.js"></script>
   </head>
 
   <body>
-    <button id="playSampleButton" type="button" onClick="playSample()">
-      Play Sample File
+    <button id="playAll" type="button" onClick="playAll()">
+      Play All Sounds
     </button>
     
     <span id="loading"></span>
    
-    <div id="song_info_wrapper">
-      <div id="artist">Your</div>
-      <div id="title">Urban Sound</div>
-      <div id="album">Recording</div>
-    </div>
-  
-
-    <canvas id="viewAudio" width="370" height="640"></canvas>
+    <canvas id="viewAudioCanvas" width="370" height="640"></canvas>
+    <!-- <svg id="viewAudio" width="370" height="640"> </svg> -->
   </body>
 </html>
